@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/f2aab9db0c35497a8cd9d02bc9c35f83/artifacts
+end_time: 1722565936531
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f2aab9db0c35497a8cd9d02bc9c35f83
+run_name: wise-cod-923
+run_uuid: f2aab9db0c35497a8cd9d02bc9c35f83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722565936113
+status: 3
+tags: []
+user_id: Marianna

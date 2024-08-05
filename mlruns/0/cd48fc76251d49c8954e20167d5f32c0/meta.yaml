@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/cd48fc76251d49c8954e20167d5f32c0/artifacts
+end_time: 1722567940905
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cd48fc76251d49c8954e20167d5f32c0
+run_name: righteous-bear-608
+run_uuid: cd48fc76251d49c8954e20167d5f32c0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722567940650
+status: 3
+tags: []
+user_id: Marianna

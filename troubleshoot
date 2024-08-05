@@ -1,0 +1,27 @@
+if the ERROR is
+
+ File "C:\Users\Marianna\Desktop\MLFlow_tr\test_mlflow.py", line 14, in <module>
+    log_artifact("reduces_dataset.csv")
+  File "C:\Users\Marianna\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\mlflow\tracking\fluent.py", line 1109, in log_artifact
+    MlflowClient().log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\Marianna\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\mlflow\tracking\client.py", line 1914, in log_artifact
+    self._tracking_client.log_artifact(run_id, local_path, artifact_path)
+  File "C:\Users\Marianna\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\mlflow\tracking\_tracking_service\client.py", line 803, in log_artifact
+    artifact_repo = self._get_artifact_repo(run_id)
+  File "C:\Users\Marianna\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\mlflow\tracking\_tracking_service\client.py", line 787, in _get_artifact_repo
+    artifact_repo = get_artifact_repository(artifact_uri)
+  File "C:\Users\Marianna\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\mlflow\store\artifact\artifact_repository_registry.py", line 133, in get_artifact_repository
+    return _artifact_repository_registry.get_artifact_repository(artifact_uri)
+  File "C:\Users\Marianna\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\mlflow\store\artifact\artifact_repository_registry.py", line 78, in get_artifact_repository
+    return repository(artifact_uri)
+  File "C:\Users\Marianna\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\mlflow\store\artifact\mlflow_artifacts_repo.py", line 45, in __init__
+    super().__init__(self.resolve_uri(artifact_uri, get_tracking_uri()))
+  File "C:\Users\Marianna\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\mlflow\store\artifact\mlflow_artifacts_repo.py", line 59, in resolve_uri
+    _validate_uri_scheme(track_parse.scheme)
+  File "C:\Users\Marianna\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\mlflow\store\artifact\mlflow_artifacts_repo.py", line 35, in _validate_uri_scheme
+    raise MlflowException(
+mlflow.exceptions.MlflowException: The configured tracking uri scheme: 'file' is invalid for use with the proxy mlflow-artifact scheme. The allowed tracking schemes are: {'http', 'https'}
+
+Solution 
+
+To fix this, you need to set up and connect to an MLflow server using an http or https scheme instead of using a local file:// URI for tracking. 

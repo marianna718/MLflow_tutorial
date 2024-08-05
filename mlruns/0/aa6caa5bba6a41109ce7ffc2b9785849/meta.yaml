@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/aa6caa5bba6a41109ce7ffc2b9785849/artifacts
+end_time: 1722566621420
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: aa6caa5bba6a41109ce7ffc2b9785849
+run_name: amusing-frog-772
+run_uuid: aa6caa5bba6a41109ce7ffc2b9785849
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722566621302
+status: 3
+tags: []
+user_id: Marianna

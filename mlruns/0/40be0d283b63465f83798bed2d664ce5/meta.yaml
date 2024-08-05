@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/40be0d283b63465f83798bed2d664ce5/artifacts
+end_time: 1722566615632
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 40be0d283b63465f83798bed2d664ce5
+run_name: defiant-mouse-179
+run_uuid: 40be0d283b63465f83798bed2d664ce5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722566615382
+status: 3
+tags: []
+user_id: Marianna
